@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{724F29A9-4
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Narato.Correlations.Test", "test\Narato.Correlations.Test\Narato.Correlations.Test.xproj", "{5459FACA-CE9F-4325-8254-BF7785AB3D79}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Narato.Correlations.IntergrationTest", "test\Narato.Correlations.IntergrationTest\Narato.Correlations.IntergrationTest.xproj", "{9A5525D0-92D7-4D9F-B761-0AA8D343340B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{5459FACA-CE9F-4325-8254-BF7785AB3D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5459FACA-CE9F-4325-8254-BF7785AB3D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5459FACA-CE9F-4325-8254-BF7785AB3D79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A5525D0-92D7-4D9F-B761-0AA8D343340B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A5525D0-92D7-4D9F-B761-0AA8D343340B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A5525D0-92D7-4D9F-B761-0AA8D343340B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A5525D0-92D7-4D9F-B761-0AA8D343340B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,5 +38,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C2090DA6-DDE7-4973-8604-7A22224A5D60} = {9240D717-BA37-4F46-BB14-AD548F09A008}
 		{5459FACA-CE9F-4325-8254-BF7785AB3D79} = {724F29A9-4A9B-45C4-8363-511A0DB2A237}
+		{9A5525D0-92D7-4D9F-B761-0AA8D343340B} = {724F29A9-4A9B-45C4-8363-511A0DB2A237}
 	EndGlobalSection
 EndGlobal
