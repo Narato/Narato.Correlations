@@ -1,34 +1,26 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
-using Narato.Correlations.Correlations;
-using Narato.Correlations.Correlations.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace Narato.Correlations.IntergrationTest.Correlations
 {
     public class AddCorrelationIdToResponseMiddlewareTest
     {
-
         private TestServer SetupServer()
         {
             var builder = new WebHostBuilder()
                 .Configure(app =>
                 {
-                    app.UseMiddleware<AddCorrelationIdToResponseMiddleware>();
+                    app.UseCorrelations();
                 })
                 .ConfigureServices(services =>
                 {
-                    services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-                    services.AddTransient<ICorrelationIdProvider, CorrelationIdProvider>();
+                    services.AddCorrelations();
                 });
 
             return new TestServer(builder);
