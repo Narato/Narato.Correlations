@@ -4,6 +4,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Narato.Correlations.Correlations;
 using Narato.Correlations.Correlations.Interfaces;
+using Narato.Correlations.Http;
+using Narato.Correlations.Http.Interfaces;
 using System;
 
 namespace Narato.Correlations
@@ -22,6 +24,7 @@ namespace Narato.Correlations
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             services.AddTransient<ICorrelationIdProvider, CorrelationIdProvider>();
+            services.AddTransient<IHttpClientFactory, HttpClientFactory>();
 
             return services;
         }
