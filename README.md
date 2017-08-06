@@ -1,4 +1,4 @@
-# Narato.LogExtensions
+# Narato.Correlations
 This library contains middleware for setting a Correlation Id on responses, and methods to use them cross-app
 
 When working with a "micro service" architecture, you want to be able to follow the flow of your entire application in log files.  
