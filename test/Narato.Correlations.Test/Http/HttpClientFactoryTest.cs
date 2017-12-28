@@ -36,10 +36,10 @@ namespace Narato.Correlations.Test.Http
             var client = factory.Create();
 
             Assert.NotNull(client);
-            Assert.IsType(typeof(HttpClient), client);
+            Assert.IsType<HttpClient>(client);
 
             var handler = typeof(HttpMessageInvoker).GetField("_handler", BindingFlags.NonPublic | BindingFlags.Instance).GetValue(client);
-            Assert.IsType(typeof(CorrelationEnrichingHttpClientHandler), handler);
+            Assert.IsType<CorrelationEnrichingHttpClientHandler>(handler);
         }
     }
 }
