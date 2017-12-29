@@ -14,16 +14,10 @@ What this library does correlation-wise in a nutshell:
 
 Getting started
 ==========
-### 1. Add dependency in project.json
+### 1. Add dependency in your project's csproj file
 
-```json
-"dependencies": {
-   "Narato.Correlations": "1.0.1"
-}
-```
-or if using the new csproj files: 
 ```xml
-<PackageReference Include="Narato.Correlations" Version="1.0.1" />
+<PackageReference Include="Narato.Correlations" Version="2.0.0" />
 ```
 
 ### 2. Configure Startup.cs
